@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Signika:wght@300..700&display=swap');
+
+.song-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 20%;
+    border-radius: 50%;
+
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    padding: 3rem 1rem 1rem 1rem;
+    color: rgb(54,54,54);
+    font-family: "Lilita One", sans-serif;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-family: "Signika", sans-serif;
+    color: rgb(54,54,54);
+  }
+}
+@media  screen and (max-width:768px){
+  .song-container{
+    img{
+      width: 60%;
+    }
+  }
+}

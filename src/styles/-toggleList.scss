@@ -1,0 +1,42 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  button {
+    background: transparent;
+    border: 2px solid rgb(65, 65, 65);
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgb(65, 65, 65);
+      color: aliceblue;
+      border: 2px solid rgb(240, 240, 240);
+    }
+  }
+
+}
+
+#title-1 {
+  color: purple;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+      position: fixed;
+      top: 0.6vh;
+      right: 5vw;
+
+    }
+  }
+  #app-title {
+    position: fixed;
+    top: 0.6vh;
+    right: 5vw;
+  }
+}

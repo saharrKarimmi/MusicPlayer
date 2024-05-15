@@ -1,5 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.App{
+  transition: all ease;
+}
+
+.activeList {
+  margin-left: 10%;
+}
+
+//باید فایل های دیگر sass را داخل فایل اصلی آن که app.scss هست را import کنیم
+
+@import "-player";
+@import "-song";
+@import "./-songList";
+@import "-toggleList";
